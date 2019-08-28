@@ -449,7 +449,12 @@ RectangularSensorPrimitive.prototype.update = function (frameState) {
         }
     }
 };
+RectangularSensorPrimitive.prototype.isDestroyed = function() {
+	return false;
+};
+RectangularSensorPrimitive.prototype.destroy=function () {
 
+}
 var matrix3Scratch = new Matrix3();
 var nScratch = new Cartesian3();
 
